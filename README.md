@@ -13,9 +13,9 @@ util1.js
 util2.js
 
     export fn1()=>{
-    
-        console.log('我是fn1')
-      
+
+        console.log('我是fn1');
+
     }
     
     export fn2()=>{
