@@ -13,18 +13,22 @@ util1.js
 util2.js
 
     export fn1()=>{
+    
       console.log('我是fn1')
+      
     }
     
     export fn2()=>{
+    
       console.log('我是fn2')
+      
     }
     
-index.js
+    index.js
 
-import util1 from ./util1.js
+    import util1 from ./util1.js
 
-import {fn1,fn2} from ./util2.js
+    import {fn1,fn2} from ./util2.js
 
     
   
