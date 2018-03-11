@@ -6,7 +6,7 @@ util1.js
     
     export default{
     
-      console.log('我是util1');
+    console.log('我是util1');
       
     }
     
