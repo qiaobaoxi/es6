@@ -6,7 +6,7 @@ util1.js
     
     export default{
     
-      console.log('我是util1');
+        console.log('我是util1');
       
     }
     
@@ -14,13 +14,13 @@ util2.js
 
     export fn1()=>{
     
-      console.log('我是fn1')
+        console.log('我是fn1')
       
     }
     
     export fn2()=>{
     
-      console.log('我是fn2')
+        console.log('我是fn2')
       
     }
     
