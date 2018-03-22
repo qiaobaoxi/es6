@@ -1,8 +1,8 @@
 # es6
 
-util1.js util2.js index.js
+    util1.js util2.js index.js
 
-util1.js
+    util1.js
     
     export default{
     
@@ -10,7 +10,7 @@ util1.js
       
     }
     
-util2.js
+    util2.js
 
     export fn1()=>{
 
