@@ -98,12 +98,52 @@ Node 里面，顶层对象是global，但其他环境都不支持。
 任何部署了 Iterator 接口的对象，都可以用for...of循环遍历。Map 结构原生支持 Iterator 接口，配合变量的解构赋值，获取键名和键值就非常方便。
 
 const map = new Map();
+
 map.set('first', 'hello');
+
 map.set('second', 'world');
 
 for (let [key, value] of map) {
+
   console.log(key + " is " + value);
+  
 }
+
 // first is hello
+
 // second is world
      
+Array.from(document.querySelectorAll('*')); // => returns a real array.
+
+[0, 0, 0].fill(7, 1); // => [0, 7, 7]
+
+[1, 2, 3].findIndex(function(x) {
+
+    return x === 2;
+    
+}); // => 1
+
+['a', 'b', 'c'].entries(); // => Iterator [0: 'a'], [1: 'b'], [2: 'c']
+
+['a', 'b', 'c'].keys();    // => Iterator 0, 1, 2
+
+['a', 'b', 'c'].values();  // => Iterator 'a', 'b', 'c'
+
+// Before
+
+new Array();        // => []
+
+new Array(4);       // => [,,,]
+
+new Array(4, 5, 6); // => [4, 5, 6]
+
+// After
+
+Array.of();         // => []
+
+Array.of(4);        // => [4]
+
+Array.of(4, 5, 6);  // => [4, 5, 6]
+
+首先是 from() 方法，该方法可以将一个类数组对象转换成一个真正的数组。还记得我们之前常写的 Array.prototype.slice.call(arguments) 吗？现在可以跟
+  他说拜拜了~
